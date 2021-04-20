@@ -1,13 +1,14 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-20 11:40:41
- * @LastEditTime: 2021-04-20 14:33:48
+ * @LastEditTime: 2021-04-20 14:50:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \reading-web-admin\src\components\AddNews.vue
 -->
 <template>
     <div class="main">
+        
         <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
             <FormItem label="标题" prop="title">
                 <Input v-model="formValidate.title" placeholder="Enter your name"/>
