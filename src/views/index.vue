@@ -1,7 +1,7 @@
 <!--
  * @Author: lesley
  * @Date: 2021-04-13 22:56:24
- * @LastEditTime: 2021-04-20 11:41:53
+ * @LastEditTime: 2021-04-20 16:08:40
   index 也为 某个模块的管理页面
 -->
 
@@ -14,8 +14,8 @@
         </div>
         <div class="content">
             <!-- 通过点击菜单的name来显示不同的模块页面 -->
-            <!-- <NewsList/> -->
-            <AddNews/>
+            <NewsList/>
+            <!-- <AddNews/> -->
         </div>
       </div>
       
