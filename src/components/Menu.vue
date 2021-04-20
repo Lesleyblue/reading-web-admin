@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-14 09:13:23
- * @LastEditTime: 2021-04-20 11:38:46
+ * @LastEditTime: 2021-04-20 16:55:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \reading-web-admin\src\components\Menu.vue
@@ -14,7 +14,10 @@
                     <Icon type="ios-paper" />
                     新闻管理
                 </template>
-                <MenuItem name="1-1">新闻列表</MenuItem>
+                    <MenuItem name="1-1">新闻列表</MenuItem>     
+                <!-- <router-link to="/news/newsList">
+                    <MenuItem name="1-1">新闻列表</MenuItem>     
+                </router-link> -->
                 <MenuItem name="1-2">新增新闻</MenuItem>
                 <MenuItem name="1-3">新闻分类</MenuItem>
             </Submenu>
@@ -56,7 +59,6 @@ export default {
     methods:{
         changeMenu(e){
             this.$store.commit('changeMenu',e)
-            console.log(this.$store.state.activeName)
         }
     }
 }
