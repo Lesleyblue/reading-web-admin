@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-20 11:40:41
- * @LastEditTime: 2021-04-20 14:50:57
+ * @LastEditTime: 2021-04-21 15:30:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \reading-web-admin\src\components\AddNews.vue
@@ -46,6 +46,12 @@ import E from 'wangeditor'
 export default {
     data () {
         return {
+            uploadList: [
+                {
+                    id:1,
+                    url:'',
+                }
+            ],
             formValidate: {
                 title: '',
                 writer: '',
@@ -53,6 +59,7 @@ export default {
                 date: '',
                 desc: '',
                 text: '',
+                
             },
             ruleValidate: {
                 title: [
@@ -109,9 +116,14 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.editor{
-    width: 100px;
-    height: 100px;
-    border: 1px #eee solid;
+.main{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    .editor{
+        width: 100px;
+        height: 100px;
+        border: 1px #eee solid;
+    }
 }
 </style>

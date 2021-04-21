@@ -1,7 +1,7 @@
 <!--
  * @Author: lesley
  * @Date: 2021-04-13 22:56:24
- * @LastEditTime: 2021-04-20 17:07:14
+ * @LastEditTime: 2021-04-21 15:33:13
   index 也为 某个模块的管理页面
 -->
 
@@ -16,7 +16,8 @@
             <!-- 通过点击菜单的name来显示不同的模块页面 -->
             <!-- <router-view></router-view> -->
             <!-- <AddNews/> -->
-            <NewsList/>
+            <!-- <NewsList/> -->
+            <Upload/>
         </div>
       </div>
       
@@ -28,12 +29,14 @@ import Navigator from '../components/Navigator'
 import Menu from '../components/Menu'
 import NewsList from '../components/NewsList'
 import AddNews from '../components/AddNews'
+import Upload from '../components/UploadImg'
 export default {
     components:{
         Navigator,
         Menu,
         NewsList,
-        AddNews
+        AddNews,
+        Upload
     },
     methods:{
         showMenu(){
